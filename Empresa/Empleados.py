@@ -45,7 +45,7 @@ class Empleado :
         nSalario =self.salario = 0.05
         nSalario = nSalario + self.salario
         self.salario = nSalario
-        return "El nuevo salario es de : " + self.salario
+        return "El nuevo salario es de: " + self.salario
     def DuplicarSalario (self):
     # Aqui va el codigo 
         self.salario = self.salario 
@@ -63,3 +63,16 @@ class Empleado :
         # Forma 2
         # return self.salarios*12
     
+    FechaNacimiento = Fecha()
+    fechaIngreso = Fecha()
+    """--------------------------------------
+        #Metodos
+    -----------------------------------------"""
+    def ConsultarDiaCumpleanios(self):
+        return "El dia de su cumpleaños es:" +self.FechaNacimiento.ConsultarDia()
+
+    def CalcularImpuesto(self):
+        total=self.CalcularSalarioAnual()
+        return (total * 19.5) / 100
+        # forma 2
+        #return self.CalcularSalarioAnual()= 0.195               

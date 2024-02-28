@@ -1,5 +1,6 @@
 from CuentaAhorros import CuentaAhorros
 from CuentaCorriente import CuentaCorriente
+from CDT import  CDT
 
 
 class SimulaBancario :
@@ -9,7 +10,14 @@ class SimulaBancario :
     ------------------------"""
     cedula = ""
     nombre = ""
-    mesActual = 0    
+    mesActual = 0  
+    """#ASOCIACIONES"""
+    CuentaCorriente= CuentaCorriente
+    CuentaAhorros = CuentaAhorros
+    CDT = CDT
+    """-----------------------------
+    #METODOS
+    ------------------------------"""  
     def CambiarConsignacionValor (self,NuevaConsignacionValor):
         #Aqui va el codigo de la nueva consignacion
         return 0
@@ -35,8 +43,10 @@ class SimulaBancario :
     def ConsignarCuentaCorriente (self):
         #Aqui va el codigo de la consigna de la cuenta
         return self.ConsignarCuentaCorriente
+    def ConsignarCuentaAhorros (self):
+        #Aquie va el codigo
+        return self.ConsignarCuentaAhorros
     def CalcularSaldoTotal (self):
-        return (0 * 19.5) / 100
-        #return self.calcularsaldototal() = 0.195
-
-     
+        #Aqui va el coigo
+        return "CalcularSaldoTotal:" +(self.CuentaAhorros.saldo+self.CuentaCorriente.saldo+self.CDT.saldo)
+    
