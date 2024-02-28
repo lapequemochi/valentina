@@ -1,3 +1,7 @@
+from CuentaAhorros import CuentaAhorros
+from CuentaCorriente import CuentaCorriente
+
+
 class SimulaBancario :
     # Aqui va el codigo del CDT
     """-------------------------
@@ -28,5 +32,11 @@ class SimulaBancario :
         #Aqui va el codigo de la consulta del interes
         return self.ConsultarInteresMensual
     
+    def ConsignarCuentaCorriente (self):
+        #Aqui va el codigo de la consigna de la cuenta
+        return self.ConsignarCuentaCorriente
+    def CalcularSaldoTotal (self):
+        return (0 * 19.5) / 100
+        #return self.calcularsaldototal() = 0.195
 
      

@@ -27,6 +27,18 @@ class Fecha:
     def ConsultarAnio (self):
         # Aqui va el codigo de la consulta del anio
         return self.anio
-    
-
-
+    """------------------------------------------
+    #Asociaciones
+    ------------------------------------------"""
+    FechaNacimiento = Fecha()
+    fechaIngreso = Fecha()
+    """--------------------------------------
+    #Metodos
+    -----------------------------------------"""
+def ConsultarDiaCumpleanios(self):
+    return "El dia de su cumpleaños es:" +self.FechaNacimiento.ConsultarDia()
+def CalcularImpuesto(self):
+    total=self.CalcularSalarioAnual()
+    return (0 * 19.5) / 100
+    # forma 2
+    #return self.CalcularSalarioAnual()= 0.195               
