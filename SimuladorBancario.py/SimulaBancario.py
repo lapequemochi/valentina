@@ -76,5 +76,3 @@ class SimulaBancario :
         #Aqui va el codigo de la consulta
         return "RetirarValor" +(self.RetiroSimuladorBancario+self.CalcularSaldoTotal)
     def CuentaAhorrosCuentaCorriente (self):
-       
-    
