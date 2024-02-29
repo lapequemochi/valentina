@@ -18,7 +18,7 @@ class SimulaBancario :
     """-----------------------------
     #METODOS
     ------------------------------"""  
-    def CambiarConsignacionValor (self,NuevaConsignacionValor):
+    def ConsignacionValor (self,NuevaConsignacionValor):
         #Aqui va el codigo de la nueva consignacion
         return 0
     def CambiarRetirarValor (self,NuevoRetirarValor):
@@ -40,6 +40,9 @@ class SimulaBancario :
         #Aqui va el codigo de la consulta del interes
         return self.ConsultarInteresMensual
     
+    def RetiroSimuladorBancario (Self. nConsignarCuentaCorriente, nCalcularSaldoTotal, nSaldoCuentaCorriente, nSaladoCuentaAhorros, nRetirarValor, nSaldoFinal):
+        return 0
+       
     def ConsignarCuentaCorriente (self):
         #Aqui va el codigo de la consigna de la cuenta
         return self.ConsignarCuentaCorriente
@@ -49,4 +52,8 @@ class SimulaBancario :
     def CalcularSaldoTotal (self):
         #Aqui va el coigo
         return "CalcularSaldoTotal:" +(self.CuentaAhorros.saldo+self.CuentaCorriente.saldo+self.CDT.saldo)
-    
+    def ConsultarRetirarValor(self):
+        #Aqui va el codigo de la consulta
+        return "RetirarValor" +(self.RetiroSimuladorBancario+self.CalcularSaldoTotal)
+    def CuentaAhorrosCuentaCorriente (self):
+        
