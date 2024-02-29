@@ -40,20 +40,41 @@ class SimulaBancario :
         #Aqui va el codigo de la consulta del interes
         return self.ConsultarInteresMensual
     
-    def RetiroSimuladorBancario (Self. nConsignarCuentaCorriente, nCalcularSaldoTotal, nSaldoCuentaCorriente, nSaladoCuentaAhorros, nRetirarValor, nSaldoFinal):
+    def RetiroSimuladorBancario ( Self.nConsignarCuentaCorriente, nCalcularSaldoTotal, nSaldoCuentaCorriente, nSaladoCuentaAhorros, nRetirarValor, nSaldoFinal):
         return 0
-       
+    
+       """--------------------------
+       #METODOS
+       --------------------------"""
     def ConsignarCuentaCorriente (self):
         #Aqui va el codigo de la consigna de la cuenta
         return self.ConsignarCuentaCorriente
     def ConsignarCuentaAhorros (self):
-        #Aquie va el codigo
+        #Aqui va el codigo
         return self.ConsignarCuentaAhorros
+        """------------------
+        #CONSULTAR SALDO
+        -------------------"""
+    def SaldoCorriente (self):
+        return 0
+    def SaldoAhorros (self):
+        return 0
+    def CalcularSaldoTotal(self):
+        return "Su saldo total es" +(self.SaldoCorriente+self.SaldoAhorros)
+    """-------------------
+    #PASAR DE AHORROS A CORRIENTE
+    ----------------------"""
+    def TranferirCorriente(self):
+        self.SaldoAhorros + self.ConsignarCuentaCorriente
+    """-------------------
+    Cuenta bancaria
+    ---------------------"""
     def CalcularSaldoTotal (self):
-        #Aqui va el coigo
+        #Aqui va el codigo
         return "CalcularSaldoTotal:" +(self.CuentaAhorros.saldo+self.CuentaCorriente.saldo+self.CDT.saldo)
     def ConsultarRetirarValor(self):
         #Aqui va el codigo de la consulta
         return "RetirarValor" +(self.RetiroSimuladorBancario+self.CalcularSaldoTotal)
     def CuentaAhorrosCuentaCorriente (self):
-        
+       
+    
