@@ -1,0 +1,5 @@
+from Empleado import Empleado
+
+juan = empleado("Juan", "Perez", 1, 1000000)
+roberto = empleado("roberto", "Gardiel", 1, 1000000)
+print (juan.salario)

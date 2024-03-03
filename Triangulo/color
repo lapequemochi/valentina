@@ -1,0 +1,15 @@
+class color:
+  #aqui va el codigo
+    """---------------
+    #atributos
+    ------------------"""
+    Rojo=0
+    Verde=0
+    Azul=0
+    """--------------------
+    #ColorR=Rojo, ColorV=Verde y ColorA=Azul
+    ---------------------"""
+    def CambiarColor(self, nColor):
+        return 0
+    def CambiarColorRelleno(self, nColorRelleno):
+        return 0

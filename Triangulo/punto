@@ -1,0 +1,13 @@
+class punto :
+     
+ #aqui va el codigo
+    """----------------
+    atributos
+    ------------------"""
+    punto1=0
+    punto2=0
+    punto3=0
+
+    """-------------------
+    #1L=punto1+punto2, 2L=punto2+punto3 y 3L=punto3+punto1
+    --------------------------"""

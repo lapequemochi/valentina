@@ -1,0 +1,33 @@
+class Triangulo:
+ 
+    """---------------------
+    #aqui va el codigo del triangulo
+    ---------------------------"""
+    
+    """---------------
+    #atributos
+    ------------------"""
+    
+    color=""
+    coordenadas=""
+    triangulo=""
+
+    """----------------------
+        #1 =punto, 2=punto y 3 =punto
+        #colorR =rojo, colorV= verde y colorA= azul
+        "
+        ----------------------"""
+
+    """------------------
+    #metodos
+    ---------------------"""
+    def __init__(self, triangulo, color, coordenadas):
+        self.triangulo =triangulo
+        self.color =color
+        self.coordenadas =coordenadas
+   
+    def CambiarColorLineas(self, nColorlineas):
+        return None
+    def CambiarCoordenadas(self, nCoordenadas):
+        return None
+    
